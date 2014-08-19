@@ -1,0 +1,20 @@
+{
+     "name": "subdomainer",
+     "version": "1.0.0",
+     "description": "Javascript input extension for subdomain fields",
+     "license" : "Creative Commons Attribution Non-Commercial Share Alike 3.0 Licence",
+     "homepage" : "https://github.com/Wurren/subdomainer.git",
+     "author" : "Warren Haskins <warrenhaskins@gmail.com> (http://villainyhq.com)",
+     "devDependencies": {
+          "gulp": "*",
+          "gulp-watch" : "*",
+          "gulp-less": "*",
+          "gulp-minify-css": "*",
+          "gulp-notify": "*",
+          "gulp-uglify": "*",
+          "gulp-concat": "*",
+          "gulp-rename": "*",
+          "gulp-livereload" : "*",
+          "gulp-header" : "*"
+     }
+}

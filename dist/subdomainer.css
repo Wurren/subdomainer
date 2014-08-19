@@ -1,0 +1,21 @@
+.subdomainer-wrap {
+  position: relative;
+  overflow: hidden;
+  cursor: text;
+}
+.subdomainer-wrap .sub-label {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: 0;
+  cursor: text;
+}
+.subdomainer-wrap .sub-hidden {
+  visibility: hidden;
+  cursor: text;
+}
+.subdomainer-wrap .sub-url {
+  cursor: text;
+}

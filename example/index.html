@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Subdomainer Example</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+	<link rel="stylesheet" href="../dist/subdomainer.css">
+	<style>
+		/* Basic styles for this example */
+		.wrapper {
+			width: 420px;
+			margin: 100px auto;
+		}
+
+		.field {
+			padding: 10px;
+			border: solid 1px #09c;
+			color: #333;
+			border-radius: 2px;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		/* for this example we have to adjust the subdomain label padding to match the style field padding + border */
+		.subdomainer-wrap .sub-label {
+			padding: 11px;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+	<input type="text" name="subdomain" id="subdomainer" class="field">
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../dist/subdomainer.min.js"></script>
+<script>
+	$(function(){
+		$('.field').subdomainer({
+			url: '.villainyhq.com',
+			placeholder: 'yoursubdomain'
+		});
+	});
+</script>
+
+</body>
+</html>
