@@ -39,9 +39,5 @@ gulp.task('build', function() {
 gulp.task('watch', function() {
      gulp.watch('src/subdomainer.less', ['less']);
      gulp.watch('src/subdomainer.js', ['build']);
-     var server = livereload();
-     gulp.watch(['src/*.css', 'src/*.js', 'example/*.html']).on('change', function(file) {
-          server.changed('example/index.html');
-     });
 });
 
